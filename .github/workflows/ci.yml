@@ -10,6 +10,37 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    name: PostgreSQL service example
+on: push
+
+jobs:
+  container-job:
+    runs-on: ubuntu-latest
+    container: node:10.18-jessie
+    services:
+      postgres:
+]        image: postgres
+        env:
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: admin123
+          POSTGRES_DB: simple_bank
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Connect to PostgreSQL
+        run: node client.js
+        env:
+          POSTGRES_HOST: Postgres
+          POSTGRES_PORT: 5432
     steps:
     - uses: actions/checkout@v3
 
@@ -17,6 +48,7 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: 1.18
-
+    - name: run migrations
+      run: make migrateup
     - name: Test
       run: make test
