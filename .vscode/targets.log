@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 24 23:00:17 2022
+# Make data base, printed on Wed Jun  1 10:24:30 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-04277486-3a18-4d4f-8ccb-6c80068874cf.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c82e3117-c913-4a52-8915-4b40dd2b8d52.sock
 # environment
 LC_NAME = es_AR.UTF-8
 # environment
@@ -34,8 +34,6 @@ LC_ADDRESS = es_AR.UTF-8
 MAKE_COMMAND := make
 # environment
 QT_ACCESSIBILITY = 1
-# environment
-GOPATH = /home/ariel/go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -49,7 +47,7 @@ PWD = /home/ariel/projects/Simple_Bank_Go
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-OLDPWD = /home/ariel/projects
+OLDPWD = /home/ariel
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -57,11 +55,11 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/ariel/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+VSCODE_CODE_CACHE_PATH = /home/ariel/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.1JXIM1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.EV62M1
 # default
 .LOADED := 
 # default
@@ -103,13 +101,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 96893
+VSCODE_PID = 9297
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/ariel-PC:@/tmp/.ICE-unix/9556,unix/ariel-PC:/tmp/.ICE-unix/9556
+SESSION_MANAGER = local/ariel-PC:@/tmp/.ICE-unix/1133,unix/ariel-PC:/tmp/.ICE-unix/1133
 # automatic
 *F = $(notdir $*)
 # environment
@@ -133,15 +131,13 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/f195342d_d230_4dc7_83cd_28ce1f960477
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/269c61c8_a7b5_435a_a928_53c0e747c659
 # environment
 MAKELEVEL := 0
-# environment
-IM_CONFIG_CHECK_ENV = 1
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/ariel/bin:/home/ariel/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+PATH = /home/ariel/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 # default
 MAKEFILES := 
 # environment
@@ -179,7 +175,7 @@ LOGNAME = ariel
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 9782
+SYSTEMD_EXEC_PID = 1417
 # environment
 DISPLAY = :0
 # environment
@@ -199,8 +195,6 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 COLORTERM = truecolor
 # environment
-GOMODCACHE = /home/ariel/go/pkg/mod
-# environment
 XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
@@ -208,16 +202,16 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 HOME = /home/ariel
 # environment
 QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 1)
+DB_CONN = "postgresql://root:admin123@localhost:5432/simple_bank?sslmode=disable"
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-b25800ed-1.67.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b25800ed-1.67.2-main.sock
 # environment
 TERM = xterm-256color
 # environment
 IM_CONFIG_PHASE = 1
-# environment
-GOPROXY = https://proxy.golang.org,direct
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -239,7 +233,7 @@ GDMSESSION = ubuntu
 # environment
 LC_IDENTIFICATION = es_AR.UTF-8
 # variable set hash-table stats:
-# Load=113/1024=11%, Rehash=0, Collisions=11/143=8%
+# Load=110/1024=11%, Rehash=0, Collisions=13/140=9%
 
 # Pattern-specific Variable Values
 
@@ -247,9 +241,9 @@ LC_IDENTIFICATION = es_AR.UTF-8
 
 # Directories
 
-# . (device 2053, inode 1847340): 11 files, no impossibilities.
+# . (device 2053, inode 1847340): 15 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -262,35 +256,59 @@ migratedown:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 10):
-	migrate -path db/migration -database "postgresql://root:admin123@localhost:5432/simple_bank?sslmode=disable" -verbose down
+#  recipe to execute (from 'Makefile', line 15):
+	migrate -path db/migration -database $(DB_CONN) -verbose down
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-24 14:04:12.526948373
+#  Last modified 2022-05-31 16:39:56.495788597
 #  File has been updated.
 #  Successfully updated.
+
+mock:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	mockgen -package mockdb -destination db/mock/store.go github.com/Arielcito/simple-bank-go/db/sqlc Store 
 
 dropdb:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 6):
+#  recipe to execute (from 'Makefile', line 9):
 	docker exec -it postgres dropdb --username=root simple_bank
+ 
+
+migratedown1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
+	migrate -path db/migration -database $(DB_CONN) -verbose down 1
+
+server:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	go run main.go
 
 migrateup:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
-	migrate -path db/migration -database "postgresql://root:admin123@localhost:5432/simple_bank?sslmode=disable" -verbose up
+#  recipe to execute (from 'Makefile', line 11):
+	migrate -path db/migration -database $(DB_CONN) -verbose up
 
 # Not a target:
 .DEFAULT:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -307,7 +325,7 @@ test:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 21):
 	go test -v -cover ./...
 
 sqlc:
@@ -315,44 +333,60 @@ sqlc:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 12):
+#  recipe to execute (from 'Makefile', line 19):
 	sqlc generate
+
+migrateup1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 13):
+	migrate -path db/migration -database $(DB_CONN) -verbose up 3	
 
 postgres:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
+#  recipe to execute (from 'Makefile', line 3):
 	docker run --name postgres -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=admin123 -d postgres
+
+pgadmin:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	docker run -p 443:443 -e 'PGADMIN_DEFAULT_EMAIL=ariel.serato@megatrans.com.ar' -e 'PGADMIN_DEFAULT_PASSWORD=admin123' -d dpage/pgadmin4
 
 createdb:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 4):
+#  recipe to execute (from 'Makefile', line 7):
 	docker exec -it postgres createdb --username=root --owner=root simple_bank
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server mock pgadmin migratedown1 migrateup1
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/29=0%
+# Load=17/1024=2%, Rehash=0, Collisions=1/39=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 188 B / avg = 7 B
-# current buf: size = 8162 B / used = 188 B / count = 24 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 33 / storage = 260 B / avg = 7 B
+# current buf: size = 8162 B / used = 260 B / count = 33 / avg = 7 B
 
-# strcache performance: lookups = 43 / hit rate = 44%
+# strcache performance: lookups = 62 / hit rate = 46%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=0/43=0%
-# Finished Make data base on Tue May 24 23:00:17 2022
+# Load=33/8192=0%, Rehash=0, Collisions=0/62=0%
+# Finished Make data base on Wed Jun  1 10:24:30 2022
 
  

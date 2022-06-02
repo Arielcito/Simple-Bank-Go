@@ -1,1 +1,1 @@
-{"buildTargets":["createdb","dropdb","migratedown","migrateup","postgres","sqlc","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
+{"buildTargets":["createdb","dropdb","migratedown","migratedown1","migrateup","migrateup1","mock","pgadmin","postgres","server","sqlc","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
