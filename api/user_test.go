@@ -218,7 +218,7 @@ func TestLoginUserAPI(t *testing.T) {
 					Times(1).
 					Return(user, nil)
 				store.EXPECT().
-					CreateSession(gomock.Any(), gomock.Any()).
+					CreateUser(gomock.Any(), gomock.Any()).
 					Times(1)
 			},
 			checkResponse: func(recorder *httptest.ResponseRecorder) {
@@ -321,7 +321,7 @@ func TestLoginUserAPI(t *testing.T) {
 
 func randomUser(t *testing.T) (user db.User, password string) {
 	password = util.RandomString(6)
-	hashedPassword, err := util.HashPassword(password)
+	hashedPassword, err := util.HashedPassword(password)
 	require.NoError(t, err)
 
 	user = db.User{

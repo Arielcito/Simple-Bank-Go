@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	mockdb "github.com//simple-bank-go/db/mock"
+	mockdb "github.com/Arielcito/simple-bank-go/db/mock"
 	db "github.com/Arielcito/simple-bank-go/db/sqlc"
 	"github.com/Arielcito/simple-bank-go/token"
 	"github.com/Arielcito/simple-bank-go/util"
