@@ -45,7 +45,7 @@ func (server *Server) setupRouter() {
 	router.POST("/users", server.createUser)
 	router.POST("/users/login", server.loginUser)
 
-	authRoutes := router.Group("/").Use(authMiddleware(server.tokenMaker))
+	authRoutes := router.Group("/").Use(addMiddleware(server.tokenMaker))
 	authRoutes.POST("/accounts", server.createAccount)
 	authRoutes.GET("/accounts/:id", server.getAccount)
 	authRoutes.GET("/accounts", server.listAccount)
@@ -53,10 +53,6 @@ func (server *Server) setupRouter() {
 	authRoutes.POST("/transfers", server.createTransfer)
 
 	server.router = router
-}
-
-func authMiddleware(maker token.Maker) {
-	panic("unimplemented")
 }
 
 // Start runs the HTTP server on a specific address.
