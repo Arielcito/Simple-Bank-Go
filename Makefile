@@ -1,6 +1,6 @@
 DB_CONN = "postgresql://root:admin123@localhost:5432/simple_bank?sslmode=disable"
 postgres:
-	docker run --name postgres -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=admin123 -d postgres
+	docker run --name postgres -network bank-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=admin123 -d postgres
 pgadmin: 
 	docker run -p 443:443 -e 'PGADMIN_DEFAULT_EMAIL=ariel.serato@megatrans.com.ar' -e 'PGADMIN_DEFAULT_PASSWORD=admin123' -d dpage/pgadmin4
 createdb:
