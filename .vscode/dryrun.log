@@ -1,5 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/ariel/projects/Simple_Bank_Go'
-docker run --name postgres -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=admin123 -d postgres
+docker run --name postgres -network bank-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=admin123 -d postgres
 make: Leaving directory '/home/ariel/projects/Simple_Bank_Go'
  
